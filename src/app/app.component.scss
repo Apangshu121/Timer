@@ -1,0 +1,55 @@
+
+.body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    background-image: linear-gradient(to right, violet, indigo,);
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: whitesmoke;
+    text-align: center;
+    width: 500px;
+    box-shadow: 0 3px 6px rgba(129,129,129,0.16),
+    0 3px 6px rgba(105,105,105,0.23);
+    
+
+    .timer{
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .btn-grp{
+        button{
+            background: whitesmoke;
+            border: none;
+            outline: 0;
+            cursor: pointer;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            color: black;
+
+        }
+    }
+
+    i{
+        display: block;
+    }
+
+    .btn-play-pause{
+        margin-right: 10px;
+        
+        .fa-play{
+            padding-left: 2px;
+        }
+    }
+}
+
+.timer{
+    text-align: center;
+}

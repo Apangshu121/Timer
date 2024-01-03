@@ -1,0 +1,20 @@
+<div class="body">
+  <h1 class="timer">Timer</h1>
+  <div class="container">
+    <div class="timer">
+      <span>{{ min }} : </span>
+      <span>{{ sec }}</span>
+    </div>
+    <div class="btn-grp">
+      <ng-container *ngIf="!stopTimer">
+        <button class="btn-play-pause" (click)="start()">
+          <i *ngIf="!running" class="fas fa-play"></i>
+          <i *ngIf="running" class="fas fa-pause"></i>
+        </button>
+      </ng-container>
+      <button (click)="reset()">
+        <i class="fas fa-redo"></i>
+      </button>
+    </div>
+  </div>
+</div>
